@@ -28,7 +28,7 @@ jobs:
         run: |
           if [ ! -f "gradlew" ]; then gradle wrapper; fi
           chmod +x gradlew
-          ./gradlew assembleRelase --build-cache --warning-mode all
+          ./gradlew assembleRelease --build-cache --warning-mode all
           
       - name: Upload APK
         uses: actions/upload-artifact@v3
